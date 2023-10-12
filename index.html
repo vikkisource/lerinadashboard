@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lerina Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="lna-layout">
+        <div class="lna-sidenav">
+            <a href="#" class="lna-logo">
+                <img src="assets/images/logo.png" alt="logo" >
+            </a>
+            <ul class="lna-nav-list">
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative active">
+                    
+                       
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid" viewBox="0 0 16 16">
+                                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+                              </svg>
+                     
+                        <span class="lna-nav-text">Dashboard</span>
+                        <!-- <p class="lna-nav-recent-activity-counts">12</p> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative ">
+                    
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-minus" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M5.5 9.5A.5.5 0 0 1 6 9h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                              </svg>
+                       
+                        <span class="lna-nav-text">Assignment</span>
+                        <!-- <p class="lna-nav-recent-activity-counts">12</p> -->
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative ">
+                    
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pie-chart" viewBox="0 0 16 16">
+                                <path d="M7.5 1.018a7 7 0 0 0-4.79 11.566L7.5 7.793V1.018zm1 0V7.5h6.482A7.001 7.001 0 0 0 8.5 1.018zM14.982 8.5H8.207l-4.79 4.79A7 7 0 0 0 14.982 8.5zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                              </svg>
+                    
+                        <span class="lna-nav-text">Reports</span>
+                        <p class="lna-nav-recent-activity-counts">12</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative ">
+                    
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder" viewBox="0 0 16 16">
+                                <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z"/>
+                              </svg>
+                       
+                        <span class="lna-nav-text">File Storage</span>
+                        <!-- <p class="lna-nav-recent-activity-counts">12</p> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative ">
+                    
+                       
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-dots" viewBox="0 0 16 16">
+                                <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>
+                      
+                        <span class="lna-nav-text">Message</span>
+                        <p class="lna-nav-recent-activity-counts">7</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex align-item-center lna-nav-link relative ">
+                    
+                       
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                              </svg>
+                        
+                        <span class="lna-nav-text">Settings</span>
+                        <!-- <p class="lna-nav-recent-activity-counts">12</p> -->
+                    </a>
+                </li>
+            </ul>
+
+            <div class="lna-side-nav-subscribe-box">
+                <img src="assets/images/avater-1.png" class="lna-subcribe-img">
+                <h3>Get Premium now!</h3>
+                <p>Reach our special feature by subcribe our package</p>
+                <button>Subcribe</button>
+            </div>
+        </div>
+        <div class="lna-righ-container">
+            <div class="lan-right-content-detail">
+                    <div class="lna-main-header flex align-item-center justify-between">
+                         <div>
+                            <h2 class="lna-main-header-user-name">Hello Iniesta <img src="assets/images/hilogo.png"></h2>
+                            <p class="lna-user-summary">Let's Learn Something new today</p>
+                         </div>
+                         <div class="flex align-item-center">
+                            <span class="lna-search-box relative">
+                            <input placeholder="Search anything here.."  type="search">
+                            <i class="bi bi-search"></i>
+                            </span>
+                            <div class="lna-icon-box">
+                                <i class="bi bi-pencil-square"></i>
+                            </div>
+                         </div>
+                    </div>
+                    <div class="lan-right-main-content-details">
+                           <div class="lna-course-group-box">
+                                     <div class="lna-course-box lna-course-box1">
+                                        <div class="lna-course-box-icon">
+                                            <i class="bi bi-journal-code"></i>
+                                        </div>
+                                        <p class="lna-course-name">Basic: HTML and CSS</p>
+                                        <div class="lna-course-activity ">
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-book"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-journal"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-people"></i>
+                                                <p>24</p>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div class="lna-course-box lna-course-box2">
+                                        <div class="lna-course-box-icon">
+                                            <i class="bi bi-bezier"></i>
+                                        </div>
+                                        <p class="lna-course-name">Design System</p>
+                                        <div class="lna-course-activity ">
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-book"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-journal"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-people"></i>
+                                                <p>24</p>
+                                            </div>
+                                        </div>
+                                     </div>
+                                     <div class="lna-course-box lna-course-box3">
+                                        <div class="lna-course-box-icon">
+                                            <i class="bi bi-graph-down"></i>
+                                        </div>
+                                        <p class="lna-course-name">Digital chart</p>
+                                        <div class="lna-course-activity ">
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-book"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-journal"></i>
+                                                <p>24</p>
+                                            </div>
+                                            <div class="flex align-item-center justify-center">
+                                                <i class="bi bi-people"></i>
+                                                <p>24</p>
+                                            </div>
+                                        </div>
+                                     </div>
+                           </div>
+
+                           <div class="lna-chart-container flex justify-between">
+                            <div class="lna-chart1-content">
+                                <h3 class="lna-content-headings">Hour Spent</h3>
+                                <div class="lna-chart-content-box">
+                                    <div class="flex align-item-center justify-between">
+                                        <div class="flex align-item-center">
+                                            <div class="lna-chart-label-info  flex align-item-center">
+                                                <span class="lna-chart-label-box chart1-label1-color"></span>
+                                                <p>Study</p>
+                                            </div>
+                                            <div class="lna-chart-label-info flex align-item-center">
+                                                <span class="lna-chart-label-box chart1-label2-color "></span>
+                                                <p>Exams</p>
+                                            </div>
+                                        </div>
+                                        <div class="relative lna-dropdown">
+                                            <button class=" flex align-item-center lna-dropbtn" onclick="myFunction('dropdown1')">Month<i class="bi bi-chevron-down"></i></button>
+                                            <ul class=" lna-dropdown-content" id="dropdown1">
+                                              <li>Yearly</li>
+                                              <li>Quaterly</li>
+                                              <li>Days</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                    <div class="lna-hourspent-chart"> 
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="lna-chart2-content">
+                                <h3 class="lna-content-headings">Performance</h3>
+                                <div class="lna-chart-content-box">
+                                    <div class="flex align-item-center justify-between">
+                                        <div class="flex align-item-center">
+                                            <div class="lna-chart-label-info  flex align-item-center">
+                                                <span class="lna-chart-label-box chart2-label1-color"></span>
+                                                <p>Performance</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="relative lna-dropdown ">
+                                            <button class=" flex align-item-center lna-dropbtn" onclick="myFunction('dropdown2')">Month<i class="bi bi-chevron-down"></i></button>
+                                              <ul class=" lna-dropdown-content" id="dropdown2">
+                                                <li>Yearly</li>
+                                                <li>Quaterly</li>
+                                                <li>Days</li>
+                                              </ul>
+                                        </div>
+                                       
+
+                                    </div> 
+                                    <div class="lna-performance-chart">
+                                        <div class="lna-gauge">
+                                             <div class="lna-gauge-body">
+                                                <div class="lna-gauge-fill">
+                                                    
+
+                                                </div>
+                                                <div class="lna-gauge-cover">
+                                                        
+                                                </div>
+                                             </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div class="lna-performance-chart-info-detail">
+                                        <p class="lna-performance-point-value"><span>Your Point:</span><span>8.966</span></p>
+                                        <p class="ln-performance-rank">5th leaderboard</p>
+                                    </div>  
+                                </div>
+                            </div>
+                           </div>
+                           <div class="lna-leader-content">
+                            <h3 class="lna-content-headings">Leaderboard</h3>
+                            <table class="lna-leader-table">
+                                <thead>
+                                    <th>Rank</th>
+                                    <th>Name</th>
+                                    <th>Course</th>
+                                    <th>Hour</th>
+                                    <th>Point</th>
+                                </thead>
+                                <tbody>
+                                    <tr data-performance="high">
+                                        <td>
+                                            <div >
+                                            <p class="serial-no">1</p>
+                                            <i class="bi bi-caret-up-fill"></i>
+                                            </div>
+                                        </td>
+                                        <td >
+                                            <div class="flex align-item-center lna-leader-info">
+                                                <img src="assets/images/kiki.jpg">
+                                                 <span class="lna-leader-name">Lorem ipsum dolor</span>
+
+                                            </div>
+                                        </td>
+                                        <td>45</td>
+                                        <td>300</td>
+                                        <td class="leader-point-value">15.478</td>
+                                    </tr>
+                                    <tr data-performance="low">
+                                        <td>
+                                            <div >
+                                            <p class="serial-no">2</p>
+                                            <i class="bi bi-caret-down-fill"></i>
+                                            </div>
+                                        </td>
+                                        
+                                        <td>
+                                            <div class="flex align-item-center lna-leader-info">
+                                                <img src="assets/images/kiki.jpg">
+                                                 <span class="lna-leader-name">Lorem ipsum </span>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            53
+                                        </td>
+                                        <td>
+                                            200
+                                        </td>
+                                        <td class="leader-point-value">10.390</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                           </div>
+                    </div>
+            </div>
+            <div class="lna-right-navbar">
+                   <div class="lna-right-nav-header flex align-item-center justify-between">
+                    <h2>Profile</h2>
+                    <div class="lna-icon-box">
+                        <i class="bi bi-pencil-square"></i>
+                    </div>
+                   </div>
+                   <div class="lna-profile-blog">
+                      <div class="lan-profile-img">
+                       <img src="assets/images/kiki.jpg" class="">
+                    </div>
+                       <p class="lna-profile-name flex align-item-center justify-center"><span>Andreas Iniesta</span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                        <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                      </svg></p>
+                       <span class="lna-profile-category">College Student</span>
+                   </div>
+                   <div class="lna-calender">
+                    <div class="lna-calender-header">
+                        <i class="bi bi-chevron-left"></i>
+                        <span>December 2021</span>
+                        <i class="bi bi-chevron-right"></i>
+                    </div>
+                    <ul class="lna-calender-list">
+                        <li class="lna-calender-days">
+                            <p>S</p>
+                            <p>20</p>
+                        <li class="active">
+                            <p>M</p>
+                            <p>21</p>
+                        </li>
+                        <li>
+                            <p>T</p>
+                            <p>22</p>
+                        </li>
+                        <li>
+                            <p>W</p>
+                            <p>23</p>
+                        </li>
+                        <li>
+                            <p>T</p>
+                            <p>24</p>
+                        </li>
+                        <li>
+                            <p>F</p>
+                            <p>25</p>
+                        </li>
+                        <li>
+                            <p>S</p>
+                            <p>26</p>
+                        </li>
+                           
+                          
+                     
+                        
+                    </ul>
+                   </div>
+                   <div class="lna-todo-blog">
+                    <h3 class="lna-todo-headeing">To Do List</h3>
+                    <ul class="lna-todo-lists">
+                        <li>
+                             <div class="flex">
+                                        <div class="lna-todo-check-box " onclick="this.classList.toggle('checked')"><i class="bi bi-check"></i></div>
+                                           <div class="lna-todo-conent-info lna-todo-inner-list">
+                                        <div class="lna-todo-info ">
+                                            <p class="lna-todo-list-name">Developing Restaurants App</p>
+                                            <span class="lna-todo-type-work">Progrmming</span><span class="lna-todo-work-time">08:00 AM</span>
+                                        </div>
+                                        <div class="lna-inner-list-group">
+                                                <div class="flex ">
+                                                    <div class="lna-todo-check-box  " onclick="this.classList.toggle('checked')"> <i class="bi bi-check"></i></div>
+                                                    <div class="lna-todo-info  ">
+                                                        <p class="lna-todo-list-name">Developing Restaurants </p>
+                                                      
+                                                    </div>
+                                                </div>
+                                        </div>
+                                   
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="flex">
+                                <div class="lna-todo-check-box " onclick="this.classList.toggle('checked')"><i class="bi bi-check"></i></div>
+                                <div class="lna-todo-conent-info ">
+                                    <div class="lna-todo-info ">
+                                        <p class="lna-todo-list-name">Developing Restaurants App</p>
+                                        <span class="lna-todo-type-work">Progrmming</span><span class="lna-todo-work-time">08:00 AM</span>
+                                    </div>
+                                    </div>
+                             </div>
+
+                        </li>
+                        <li class="selected">
+                            <div class="flex">
+                                <div class="lna-todo-check-box checked " onclick="this.classList.toggle('checked')"><i class="bi bi-check"></i></div>
+                                <div class="lna-todo-conent-info ">
+                                    <div class="lna-todo-info ">
+                                        <p class="lna-todo-list-name">Developing Restaurants App</p>
+                                        <span class="lna-todo-type-work">Progrmming</span><span class="lna-todo-work-time">08:00 AM</span>
+                                    </div>
+                                    </div>
+                             </div>
+
+                        </li>
+                    </ul>
+                   </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>
